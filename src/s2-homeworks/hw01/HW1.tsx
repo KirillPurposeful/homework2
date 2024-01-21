@@ -58,7 +58,7 @@ const HW1 = () => {
                 {/*проверка отображения (не менять)*/}
                 <div>
                     <Message message={message0} id={message0.id} user={message0.user}/>
-                    <FriendMessage message={friendMessage0}/>
+                    <FriendMessage message={friendMessage0} id={friendMessage0.id} user={friendMessage0.user}/>
                 </div>
 
                 {/*для автоматической проверки дз (не менять)*/}

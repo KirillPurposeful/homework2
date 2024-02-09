@@ -4,7 +4,6 @@
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s, box-shadow 0.3s;
-    width: 132px;
     height: 30px;
     display: flex;
     justify-content: center;
@@ -15,13 +14,15 @@
 
 .disabled {
     background-сolor: rgba(0, 77, 153, 1);
+    width: 132px;
 
 }
 
 .secondary {
     border: 1px solid #0066CC;
     background-color: #ffffff;
-    color:#0066CC;
+    color: #0066CC;
+    width: 176px;
 
 }
 
@@ -29,22 +30,26 @@
     background-color: rgba(0, 102, 204, 1);
     color: #ffffff;
     border: none;
+    width: 132px;
 }
 
 .red {
     background: rgba(204, 20, 57, 1);
     color: #ffffff;
     border: none;
+    width: 132px;
 }
 
 .default:hover {
     background: rgba(0, 128, 255, 1);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    width: 176px;
 }
 
 .red:hover {
     background-color: #FF1A47;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    width: 176px;
 }
 
 .secondary:hover {
@@ -53,18 +58,20 @@
 }
 
 .default:active {
-    background-color: #d4d4d4;
+    background-color: #0059B2;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2) inset;
 }
 
 .secondary:active {
-    background-color: #b2d8ff;
+    background: #C9E5FF;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2) inset;
+    width: 176px;
 }
 
 .red:active {
-    background-color: #ffcccc;
+    background-color: #B21232;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2) inset;
+    width: 176px;
 }
 
 .button:disabled {

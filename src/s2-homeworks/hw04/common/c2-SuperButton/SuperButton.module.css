@@ -1,36 +1,75 @@
 .button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    width: 132px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+
 }
 
 .disabled {
+    background-сolor: rgba(0, 77, 153, 1);
+
 }
 
 .secondary {
+    border: 1px solid #0066CC;
+    background-color: #ffffff;
+    color:#0066CC;
+
 }
 
 .default {
+    background-color: rgba(0, 102, 204, 1);
+    color: #ffffff;
+    border: none;
 }
 
 .red {
+    background: rgba(204, 20, 57, 1);
+    color: #ffffff;
+    border: none;
 }
 
 .default:hover {
+    background: rgba(0, 128, 255, 1);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .red:hover {
+    background-color: #FF1A47;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .secondary:hover {
+    background-color: #e7f3ff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
-
 .default:active {
+    background-color: #d4d4d4;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2) inset;
 }
 
 .secondary:active {
+    background-color: #b2d8ff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2) inset;
 }
 
 .red:active {
+    background-color: #ffcccc;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2) inset;
 }
 
 .button:disabled {
+    background-сolor: rgba(0, 77, 153, 1);
+    color: #9e9e9e;
+    cursor: not-allowed;
+    box-shadow: none;
 }

@@ -17,6 +17,8 @@
 }
 
 .nav a.active {
+    color: purple;
+    border: 7px solid red;
 }
 .close {
 }

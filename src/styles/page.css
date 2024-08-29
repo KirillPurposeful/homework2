@@ -1,0 +1,27 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh - 86px);
+}
+.page-header,
+.page-content,
+.page-footer {
+  padding: 0 70px;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 108px;
+  padding-bottom: 10px;
+}
+.page-content {
+  flex-grow: 1;
+  border-bottom: 1px solid var(--divider-color);
+  border-top: 1px solid var(--divider-color);
+}
+.page-footer {
+  height: 50px;
+}

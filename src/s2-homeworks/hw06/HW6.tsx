@@ -23,11 +23,11 @@ const HW6 = () => {
     }
 
     return (
-        <div id={'hw6'} className="page">
-            <div className={s2.hwTitle + " page-header"}>Hometask № 6</div>
+        <div id={'hw6'} className="section">
+            <div className={s2.hwTitle + " section-header"}>Hometask № 6</div>
 
             {/*демонстрация возможностей компоненты:*/}
-            <div className={s2.hw + " page-content"}>
+            <div className={s2.hw + " section-content"}>
                 <div className={s.editableSpanContainer}>
                     <SuperEditableSpan
                         id={'hw6-spanable-input'}
@@ -53,7 +53,6 @@ const HW6 = () => {
                     </SuperButton>
                 </div>
             </div>
-            <div className="page-footer"></div>
         </div>
     )
 }

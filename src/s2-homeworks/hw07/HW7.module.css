@@ -1,2 +1,11 @@
 .container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.section {
+
+    padding: 0 25px;
+    overflow: auto;
 }

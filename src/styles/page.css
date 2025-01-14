@@ -1,27 +1,37 @@
-.page {
+.page-wrapper {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: calc(100vh - 86px);
-}
-.page-header,
-.page-content,
-.page-footer {
-  padding: 0 70px;
+  height: 100vh;
 }
 
-.page-header {
+
+.section {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  height: 108px;
-  padding-bottom: 10px;
+  flex: 1;
 }
-.page-content {
-  flex-grow: 1;
+.section-header,
+.section-content,
+.section-footer {
+  padding: 0 25px;
+}
+
+.section-header {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+}
+.section-content {
+
+  flex: 4;
+  overflow: auto;
   border-bottom: 1px solid var(--divider-color);
   border-top: 1px solid var(--divider-color);
 }
+
 .page-footer {
-  height: 50px;
+  height: 10vh;
 }

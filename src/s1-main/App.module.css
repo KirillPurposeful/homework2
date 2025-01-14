@@ -3,7 +3,10 @@
 }
 
 .hw {
-
+    padding: 20px;
+    background-color: #eaeaea;
+    border-radius: 8px;
+    margin-top: 20px;
 }
 
 .hwTitle {
@@ -12,4 +15,25 @@
     font-weight: 600;
     line-height: 26.82px;
     text-align: left;
+    padding-top: 29px;
 }
+
+.customSelect {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 16px;
+    width: 165px;
+    cursor: pointer;
+}
+
+.customRadio {
+    margin: 10px 0;
+    accent-color: #000;
+}
+
+
+
+
+

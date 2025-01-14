@@ -40,7 +40,7 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
     spanProps || {}
 
     const onEnterCallback = (e: React.KeyboardEvent) => {
-        if (onEnter && e.key === 'Enter') {
+        if (e.key === 'Enter') {
             setEditMode(false);
             onEnter?.(e);
         }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import SuperSelect from './common/c5-SuperSelect/SuperSelect'
 import SuperRadio from './common/c6-SuperRadio/SuperRadio'
 import s2 from '../../s1-main/App.module.css'
@@ -12,36 +12,43 @@ import s from './HW7.module.css'
 * */
 
 const arr = [
-    { id: 1, value: 'x' },
-    { id: 2, value: 'y' },
-    { id: 3, value: 'z' },
+    {id: 1, value: 'Pre Junior'},
+    {id: 2, value: 'Junior'},
+    {id: 3, value: 'Junior plus'},
 ] // value может быть изменено
+export type ArrayType = typeof arr;
 
 const HW7 = () => {
-    const [value, onChangeOption] = useState(1) // селект и радио должны работать синхронно
+    const [value, onChangeOption] = useState(1)
+    console.log('HW7 Rendered', value);
+
+    const onOptionChange = (option: { id: number; value: string }) => {
+        onChangeOption(option.id);
+    };
 
     return (
-        <div id={'hw7'}>
-            <div className={s2.hwTitle}>Homework #7</div>
+        <div id={'hw7'} className={'section'}>
+            <div className={s2.hwTitle + " section-header"}>Hometask № 7</div>
 
-            {/*демонстрация возможностей компонент:*/}
-            <div className={s2.hw}>
+            <div className={s2.hw + " section-content"}>
                 <div className={s.container}>
-                    <div>
+                    <div className={s.section}>
                         <SuperSelect
                             id={'hw7-super-select'}
                             options={arr}
                             value={value}
-                            onChangeOption={onChangeOption}
+                            onChangeOption={onOptionChange}
+                            className={s2.customSelect}
                         />
                     </div>
-                    <div>
+                    <div className={s.section}>
                         <SuperRadio
                             id={'hw7-super-radio'}
                             name={'hw7-radio'}
                             options={arr}
                             value={value}
-                            onChangeOption={onChangeOption}
+                            onChangeOption={onOptionChange}
+                            className={s2.customRadio}
                         />
                     </div>
                 </div>
